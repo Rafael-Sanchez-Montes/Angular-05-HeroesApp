@@ -3,19 +3,16 @@
 <br>
 
 <div fxLayout="row wrap"
-        fxLayout.xs="column"
-        fxLayoutAlign="center"
-        fxLayoutGap="20px">
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="20px">
 
     <div fxFlex="20"
-            fxFleg.lg="15"
-            fxFleg.sm="00"
-            *ngFor="let heroe of heroes">
-
-    <app-heroe-tarjeta [heroe]="heroe" ></app-heroe-tarjeta>
-
+         fxFlex.lg="15"
+         fxFlex.sm="30"
+         *ngFor="let heroe of heroes">
+       
+        <app-heroe-tarjeta [heroe]="heroe"></app-heroe-tarjeta>
     </div>
-
-
-
 </div>
+
